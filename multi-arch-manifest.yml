@@ -1,0 +1,11 @@
+image: timsiefert/docker-rclone-healthcheck-io:latest
+manifests:
+  - image: timsiefert/docker-rclone-healthcheck-io:latest-amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: timsiefert/docker-rclone-healthcheck-io:latest-arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
